@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./imgs/orange.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>シェアリングテクノロジー株式会社</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-img">
+            <a href="#"><img src="./imgs/header_logo.png" alt=""></a>
+            <a href="#"><img src="./imgs/header_logo02.png" alt=""></a>
+        </div>
+        <div class="header-menu">
+            <ul>
+                <li><a href="#">企業</a></li>
+                <li><a href="#">事業内容</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">ニュース</a></li>
+                <li><a href="#">採用</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+                <li><a href="#">資本業務提携</a></li>
+            </ul>
+            <div class="header-button" id="header-button" onclick="menuToggle()">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="language">
+                <div class="language-text">
+                    <p>
+                        日本語
+                    </p>
+                    <i class="fas fa-caret-down"></i>
+                    <i class="fas fa-caret-up"></i>
+                </div>
+                <div class="language-text-eng">
+                    <p>
+                        English
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Fullscreen-menu" id="menu-overlay">
+        <div class="Company">
+            <div class="name">
+                <h1>COMPANY</h1>
+                <p>企業</p>
+            </div>
+            <ul>
+                <li>
+                    <p>トップメッセージ</p>
+                </li>
+                <li>
+                    <p>会社概要</p>
+                </li>
+                <li>
+                    <p>取締役・監査役</p>
+                </li>
+                <li>
+                    <p>ミッション</p>
+                </li>
+                <li>
+                    <p>CSR</p>
+                </li>
+            </ul>
+        </div>
+        <div class="Business">
+            <div class="name">
+                <h1>BUSINESS</h1>
+                <p>事業内容</p>
+            </div>
+        </div>
+        <div class="IR">
+            <div class="name">
+                <h1>IR</h1>
+                <p>投資家情報</p>
+            </div>
+            <div class="IR-menu">
+                <div class="IR-menu-tab">
+                    <p>></p>
+                    <ul>
+                        <li>IRニュース</li>
+                        <li>IRニュース一覧</li>
+                        <li>IRニュース配信登録</li>
+                    </ul>
+                </div>
+                <div class="IR-menu-tab">
+                    <p>></p>
+                    <ul>
+                        <li>財務情報</li>
+                        <li>経営成績</li>
+                    </ul>
+                </div>
+                <div class="IR-menu-tab">
+                    <p>></p>
+                    <ul>
+                        <li>株式情報</li>
+                        <li>株主メモ</li>
+                    </ul>
+                </div>
+                <div class="IR-menu-tab">
+                    <p>></p>
+                    <ul>
+                        <li>経営情報</li>
+                        <li>トップメッセージ</li>
+                        <li>会社情報</li>
+                        <li>コーポレートガバナンス</li>
+                    </ul>
+                </div>
+                <div class="IR-menu-tab">
+                    <p>></p>
+                    <ul>
+                        <li>IRライブラリ</li>
+                        <li>IRライブラリ一覧</li>
+                        <li>決算短信</li>
+                        <li>決算説明資料</li>
+                        <li>有価証券報告書等</li>
+                        <li>株主総会関連資料</li>
+                        <li>適時開示情報</li>
+                        <li>その他IR資料</li>
+                    </ul>
+                </div>
+                <div class="IR-menu-tab">
+                    <p>></p>
+                    <ul>
+                        <li>株価情報</li>
+                        <li>IRカレンダー</li>
+                        <li>FAQ</li>
+                        <li>ディスクロージャーポリシー</li>
+                        <li>免責事項</li>
+                        <li>お問い合わせ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="news-recruit">
+            <div class="left-news">
+                <div class="name">
+                    <h1>NEWS</h1>
+                    <p>ニュース</p>
+                </div>
+            </div>
+            <div class="right-recruit">
+                <div class="name">
+                    <h1>RECRUIT</h1>
+                    <p>採用</p>
+                </div>
+            </div>
+        </div>
+        <div class="capital-alliance">
+            <div class="name">
+                <h1>CAPITAL ALLIANCE</h1>
+                <p>資本業務提携</p>
+            </div>
+        </div>
+    </div>
+    <div class="Company-hovertag">
+        <div><a href="#">トップメッセージ</a></div>
+        <div><a href="#">会社概要</a></div>
+        <div><a href="#">取締役・監査役</a></div>
+        <div><a href="#">ミッション・沿革</a></div>
+        <div><a href="#">CSR</a></div>
+    </div>
+    <div class="guide-button">
+
+    </div>
+    <div class="video">
+        <video class="md" src="https://www.sharing-tech.jp/cms/wp-content/themes/sharing-technology2018/video/mvmov.mp4"
+            autoplay="" loop="" muted=""></video>
+    </div>
+
+    <div class="border"></div>
+
+    <div class="news">
+        <div class="news-release">
+            <img src="./imgs/ttl01.png" alt="">
+            <p class="sub-title">ニュースリリース</p>
+            <ul>
+                <li>
+                    <div class="date-onepoint">
+                        <p class="date">2019.12.02</p>
+                        <div class="onepoint">プレリリース</div>
+                    </div>
+                    <p class="news-text">暮らしのお困りごとを解決！「eo×生活110番」提供開始～提供範囲を「eo電気」から「eo」全体へ拡大～</p>
+                </li>
+                <li>
+                    <div class="date-onepoint">
+                        <p class="date">2019.11.15</p>
+                        <div class="onepoint">お知らせ</div>
+                    </div>
+                    <p class="news-text">監査等委員会設置会社への移行及び定款の一部変更に関するお知らせ</p>
+                </li>
+                <li>
+                    <div class="date-onepoint">
+                        <p class="date">2019.11.15</p>
+                        <div class="onepoint">お知らせ</div>
+                    </div>
+                    <p class="news-text">代表取締役の異動及び監査等委員会設置会社移行後の役員人事に関するお知らせ</p>
+                </li>
+                <li>
+                    <div class="date-onepoint">
+                        <p class="date">2019.11.13</p>
+                        <div class="onepoint">お知らせ</div>
+                    </div>
+                    <p class="news-text">2019年9月期第決算発表及び決算説明に関するお知らせ</p>
+                </li>
+            </ul>
+            <div class="news-bottom-button">
+                <p>ニュース一覧</p>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="IR-news">
+            <div class="IR-news-top">
+                <div class="IR-news-toptext">
+                    <img src="./imgs/ttl02.png" alt="">
+                    <p class="sub-title">IRニュース</p>
+                </div>
+                <div class="IR-news-topbutton">
+                    <p>IRニュース配信登録</p>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <div class="date-onepoint">
+                        <p class="date">2019.12.03</p>
+                        <div class="onepoint">IR資料</div>
+                    </div>
+                    <p class="news-text">第13期定時株主総会招集ご通知</p>
+                </li>
+                <li>
+                    <div class="date-onepoint">
+                        <p class="date">2019.12.03</p>
+                        <div class="onepoint">IR資料</div>
+                    </div>
+                    <p class="news-text">第13期定時株主総会招集ご通知に際してのインターネット開示情報</p>
+                </li>
+                <li>
+                    <div class="date-onepoint">
+                        <p class="date">2019.11.15</p>
+                        <div class="onepoint">適時開示</div>
+                    </div>
+                    <p class="news-text">監査等委員会設置会社への移行及び定款の一部変更に関するお知らせ</p>
+                </li>
+                <li>
+                    <div class="date-onepoint">
+                        <p class="date">2019.11.15</p>
+                        <div class="onepoint">適時開示</div>
+                    </div>
+                    <p class="news-text">代表取締役の異動及び監査等委員会設置会社移行後の役員人事に関するお知らせ</p>
+                </li>
+            </ul>
+            <div class="news-bottom-button">
+                <p>IRニュース一覧</p>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-top" id="top">
+    </div>
+
+    <div class="movie">
+        <h2>ライフサービスインフラを可能にする”Mover”</h2>
+        <img src="./imgs/ttl03.png" alt="">
+        <p>日本一のライフサービスインフラを構築することを目指す［Mover］。<br>
+            “リアルタイムスケジュール管理機能”と”GPS機能”で世の中にある「暮らしのお困りごと」を解決し、<br>
+            ユーザーと加盟店をスピーディにマッチングすることが可能なシステムを提供いたします。
+        </p>
+        <img src="./imgs/icn_mover.png" alt="">
+        <div class="movie-youtube">
+            <button type="button" data-lity="data-lity" onclick="movieToggle() "></button>
+        </div>
+        <div class="movie-bottom-button">
+            <p>"Mover"とは</p>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+
+    </div>
+    <div class="youtube-form" id="youtube-form">
+        <div class="topright-x" id="topright-x" onclick="moviecloseToggle()"><i class="fas fa-times"></i></div>
+        <iframe class="youtube" width="918" height="516" src="https://www.youtube.com/embed/HISAmr9aQQ8" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="services">
+        <p class="services-top-text">ライフサービスプラットフォームである「生活110番」、<br>
+            特定ジャンルに絞った「バーティカルメディアサイト」と<br>
+            24時間365日稼働し続けるコールセンターを通じて、<br>
+            街の専門業者を中心に様々なライフサービスを行う加盟店約3,700社と<br>
+            ユーザーをつなぐシェアリングテクノロジー。<br>
+            リアルタイムにマッチングを可能とする新システム「Mover」を強みとして展開いたします。
+        </p>
+        <div class="services-title">
+            <h2 class="services-center-text">
+                運営メディア
+            </h2>
+            <img src="./imgs/ttl04.png" alt="">
+        </div>
+        <ul class="services-main">
+            <li><img class="sm"
+                    src="https://www.sharing-tech.jp/cms/wp-content/themes/sharing-technology2018/img/top/sm/img02.jpg"
+                    alt="総合プラットフォーム">
+                <div class="services-main-title">
+                    <h2 class="services-main-text">総合プラットフォーム</h2>
+                    <img class="services-img" src="./imgs/ttl06.png" alt="">
+                    <p class="services-text">
+                        「生活110番」は暮らしの中で発生するお困りごとを解決するため、生活に関する140以上のサービスジャンルからユーザーにとって最適な専門業者を検索・比較し、問い合わせできるプラットフォームサイトです。
+                    </p>
+                </div>
+            </li>
+            <li><img class="sm"
+                    src="https://www.sharing-tech.jp/cms/wp-content/themes/sharing-technology2018/img/top/sm/img01.jpg"
+                    alt="バーティカルメディア">
+                <div class="services-main-title">
+                    <h2 class="services-main-text">バーティカルメディア</h2>
+                    <img class="services-img" src="./imgs/ttl05.png" alt="">
+                    <p class="services-text">特定テーマに興味を持つユーザーに、効率的に有益な情報を届けることができるバーティカルメディアサイト。
+                        当社では、「ペット葬儀110番」や「張替え110番」等、身の回りで起きる生活トラブルを解決する260サイトを運営しております。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="btn-primary">
+        <p>事業内容</p>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+
+    <div class="IR-main">
+        <div class="IR-main-title">
+            <h2>投資家情報</h2>
+            <img class="img md"
+                src="https://www.sharing-tech.jp/cms/wp-content/themes/sharing-technology2018/img/top/ttl08.png"
+                alt="Ir">
+        </div>
+        <ul class="IR-main-contents">
+            <li onclick="IRnewsToggle()">
+                <p>IRニュース</p>
+                <i class="fas fa-plus"></i>
+                <div class="IR-in" id="IRnews">
+                    <div class="IR-inner">
+                        <div class="IR-inner-text">
+                            <p>IRニュース一覧</p>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="IR-inner-text">
+                            <p>IRニュース配信登録</p>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li onclick="IRManagInforToggle()">
+                <p>経営情報</p>
+                <i class="fas fa-plus"></i>
+                <div class="IR-in" id="IRManagInfor">
+                    <div class="IR-inner">
+                        <div class="IR-inner-text">
+                            <p>トップメッセージ</p>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="IR-inner-text">
+                            <p>I会社概要</p>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="IR-inner-text">
+                            <p>コーポレートガバナンス</p>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="IR-li-orange">
+                <p>財務情報</p>
+                <i class="fas fa-chevron-right"></i>
+            </li>
+        </ul>
+        <ul class="IR-main-contents">
+            <li class="IR-li-orange">
+                <p>IRライブラリ</p>
+                <i class="fas fa-chevron-right"></i>
+            </li>
+            <li class="IR-li-orange">
+                <p>株式情報</p>
+                <i class="fas fa-chevron-right"></i>
+            </li>
+            <li onclick="IRSpInforToggle()">
+                <p>株価情報</p>
+                <i class="fas fa-plus"></i>
+                <div class="IR-in" id="IRSpInfor">
+                    <div class="IR-inner IR-inner-l">
+                        <div class="IR-inner-text">
+                            <p>株価情報</p>
+                            <svg class="fas" id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.09 18.99">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                </defs>
+                                <title>icon</title>
+                                <g id="group">
+                                    <path class="cls-1" d="M18,14H.26V.21H18ZM1.26,13H17V1.21H1.26Z"></path>
+                                    <polygon class="cls-1"
+                                        points="22.83 18.78 5.57 18.78 5.57 17.78 21.83 17.78 21.83 5.53 22.83 5.53 22.83 18.78">
+                                    </polygon>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="IR-inner-text">
+                            <p>IRカレンダー</p>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="IR-inner-text">
+                            <p>FAQ</p>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="IR-inner">
+                        <div class="IR-inner-text">
+                            <p>電子広告</p>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="IR-inner-text">
+                            <p>ディスクロージャーポリシー</p>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="IR-inner-text">
+                            <p>免責事項</p>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="btn-primary">
+        <p>投資家情報</p>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+
+    <div class="top-group">
+        <ul class="two-group">
+            <li>
+                <div class="one-group">
+                    <h2>採用情報</h2>
+                    <img class="img md-i"
+                        src="https://www.sharing-tech.jp/cms/wp-content/themes/sharing-technology2018/img/top/ttl09.png"
+                        alt="Recruit">
+                    <p>シェアリングテクノロジーグループでは、常に挑戦し続け、会社とともに成長できる仲間をお待ちしております。</p>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </li>
+            <li>
+                <div class="one-group">
+                    <h2>加盟店様 募集</h2>
+                    <img class="img md-i"
+                        src="https://www.sharing-tech.jp/cms/wp-content/themes/sharing-technology2018/img/top/ttl10.png"
+                        alt="Wanted franchise">
+                    <p>当社に登録されている加盟店は、現在全国に約3,700社。シェアリングテクノロジーでは、ライフサービスの良きパートナーを随時募集しております。 </p>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-top">
+        <ul>
+            <li onclick=" CompanytabToggle()" id="Companycolor">企業</li>
+            <li>事業内容</li>
+            <li>IR</li>
+            <li>ニュース</li>
+            <li>採用</li>
+            <li>資本業務提携</li>
+        </ul>
+    </div>
+
+    <div class="footer-top-Company" id="Companytab">
+        <ul>
+            <li>
+                <p>企業トップ</p>
+            </li>
+            <li>
+                <p>トップメッセージ</p>
+            </li>
+            <li>
+                <p>会社概要</p>
+            </li>
+            <li>
+                <p>取締役・会社</p>
+            </li>
+            <li>
+                <p>ミッション・沿革</p>
+            </li>
+            <li>
+                <p>CSR</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-middle">
+        <img src="./imgs/header_logo.png" alt="">
+        <img src="./imgs/header_logo02.png" alt="">
+        <div class="language">
+            <div class="language-text">
+                <p>
+                    日本語
+                </p>
+                <i class="fas fa-caret-down"></i>
+                <i class="fas fa-caret-up"></i>
+            </div>
+            <div class="language-text-eng">
+                <p>
+                    English
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="wrapper">
+            <ul>
+                <li><p>お問い合わせ</p></li>
+                <li><p>サイトマップ</p></li>
+                <li><p>プライバシーポリシー</p></li>
+                <li><p>SNS規約</p></li>
+                <li><p>著作権・商標</p></li>
+            </ul>
+            <p class="copyright">© シェアリングテクノロジー株式会社 All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $(".header .header-menu ul li:nth-child(1)").hover(function () {
+                $(".Company-hovertag").css("visibility", "visible");
+            }, function () {
+                $(".Company-hovertag").css("visibility", "hidden");
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $(".Company-hovertag").hover(function () {
+                $(".Company-hovertag").css("visibility", "visible");
+            }, function () {
+                $(".Company-hovertag").css("visibility", "hidden");
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(".header .header-menu .language .language-text .fas").on("click", function () {
+            $(".header .header-menu .language .language-text-eng").slideToggle();
+        });
+    </script>
+    <script type="text/javascript">
+        $(".header .header-menu .language .language-text .fa-caret-down").on("click", function () {
+            $(".header .header-menu .language .language-text .fa-caret-up").css("z-index", "1");
+        });
+    </script>
+    <script type="text/javascript">
+        $(".header .header-menu .language .language-text .fa-caret-up").on("click", function () {
+            $(".header .header-menu .language .language-text .fa-caret-up").css("z-index", "-1");
+        });
+    </script>
+    </script>
+    <script type="text/javascript">
+        function menuToggle() {
+            var nav = document.getElementById('menu-overlay');
+            nav.classList.toggle('active');
+
+            var nav = document.getElementById('header-button');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() < 160) {
+                    $('#top').fadeOut();
+                } else {
+                    $('#top').fadeIn();
+                    $('#top').css('display', 'flex');
+                }
+            });
+
+            $("#top").click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 800);
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        function movieToggle() {
+            var nav = document.getElementById('youtube-form');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <script type="text/javascript">
+        function moviecloseToggle() {
+            var nav = document.getElementById('youtube-form');
+            nav.classList.toggle('active');
+        }
+    </script>
+    <script type="text/javascript">
+        document.getElementById("IRnews").style.visibility = "hidden";
+        document.getElementById("IRManagInfor").style.visibility = "hidden";
+        document.getElementById("IRSpInfor").style.visibility = "hidden";
+        function IRnewsToggle() {
+            var nav = document.getElementById('IRnews');
+
+            if (nav.style.visibility == "visible") {
+                nav.style.visibility = "hidden";
+            } else {
+                nav.style.visibility = "visible";
+            }
+
+            var nav = document.getElementById('IRManagInfor');
+            nav.style.visibility = "hidden";
+
+            var nav = document.getElementById('IRSpInfor');
+            nav.style.visibility = "hidden";
+        }
+    </script>
+    <script type="text/javascript">
+        document.getElementById("IRnews").style.visibility = "hidden";
+        document.getElementById("IRManagInfor").style.visibility = "hidden";
+        document.getElementById("IRSpInfor").style.visibility = "hidden";
+        function IRManagInforToggle() {
+            var nav = document.getElementById('IRnews');
+            nav.style.visibility = "hidden";
+
+            var nav = document.getElementById('IRManagInfor');
+            if (nav.style.visibility == "visible") {
+                nav.style.visibility = "hidden";
+            } else {
+                nav.style.visibility = "visible";
+            }
+
+            var nav = document.getElementById('IRSpInfor');
+            nav.style.visibility = "hidden";
+        }
+    </script>
+    <script type="text/javascript">
+        document.getElementById("IRnews").style.visibility = "hidden";
+        document.getElementById("IRManagInfor").style.visibility = "hidden";
+        document.getElementById("IRSpInfor").style.visibility = "hidden";
+        function IRSpInforToggle() {
+            var nav = document.getElementById('IRnews');
+            nav.style.visibility = "hidden";
+
+            var nav = document.getElementById('IRManagInfor');
+            nav.style.visibility = "hidden";
+
+            var nav = document.getElementById('IRSpInfor');
+            if (nav.style.visibility == "visible") {
+                nav.style.visibility = "hidden";
+            } else {
+                nav.style.visibility = "visible";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        document.getElementById("Companytab").style.display = "none";
+        function CompanytabToggle() {
+            var nav = document.getElementById('Companytab');
+            var element = document.getElementById("Companycolor");
+
+            if (nav.style.display == "inline") {
+                nav.style.display = "none";
+                element.style.color = 'white';
+            } else {
+                nav.style.display = "inline";
+                element.style.color = '#ff780f';
+            }
+
+        }
+    </script>
+    <script type="text/javascript">
+        $(".footer-middle .language .language-text .fas").on("click", function () {
+            $(".footer-middle .language .language-text-eng").slideToggle();
+        });
+    </script>
+    <script type="text/javascript">
+        $(".footer-middle .language .language-text .fa-caret-down").on("click", function () {
+            $(".footer-middle .language .language-text .fa-caret-up").css("z-index", "1");
+        });
+    </script>
+    <script type="text/javascript">
+        $(".footer-middle .language .language-text .fa-caret-up").on("click", function () {
+            $(".footer-middle .language .language-text .fa-caret-up").css("z-index", "-1");
+        });
+    </script>
+</body>
+
+</html>
