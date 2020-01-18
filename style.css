@@ -1767,3 +1767,25 @@ ul li:nth-child(2) .services-main-title {
 #news .newsmain .post-main .last .video {
   height: auto;
 }
+@media screen and (max-width: 750px) {
+  #news .news-top-img {
+    margin: 0 3%;
+    background-size: cover;
+    background-position: bottom 50% right 20%;
+  }
+  #news .news-top-img .news-top-sentence {
+    width: 100%;
+  }
+  #news .newsmain {
+    padding: 80px 5% 50px;
+  }
+  #news .newsmain ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  #news .newsmain ul li {
+    align-items: center;
+    width: 90%;
+  }
+ }
