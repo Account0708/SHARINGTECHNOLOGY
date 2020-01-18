@@ -641,6 +641,7 @@ ul li:nth-child(1) .services-main-title {
 }
 ul li:nth-child(2) .services-main-title {
   background-image: url(./imgs/img01-1.jpg);
+  background-size: cover;
   padding: 48px 30px 14px;
 }
 .services-main-text {
@@ -1146,7 +1147,7 @@ ul li:nth-child(2) .services-main-title {
   }
   .services {
     font-size: 1.2em;
-    padding: 0 10px;
+    padding: 97px 10px 54px;
     height: auto;
   }
   .services .services-top-text {
@@ -1164,11 +1165,14 @@ ul li:nth-child(2) .services-main-title {
     width: 90%;
     height: auto;
     padding: 5%;
+    background-position: center;
   }
   .services .services-main li:nth-child(2) .services-main-title {
     width: 90%;
     height: auto;
     padding: 5%;
+    background-size: cover;
+    background-position: center;
   }
   .services .services-main li .services-main-title .services-text {
     font-size: 1.1em;
