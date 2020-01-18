@@ -986,11 +986,16 @@ body {
     justify-content: space-between;
   }
   .header .header-img {
-    height: 100%;
-    width: 40%;
+    height: 40px;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .header .header-img a {
+    width: auto;
   }
   .header .header-img a img {
-    height: 100%;
+    height: 40px;
   }
   .header .header-menu {
     flex-direction: row-reverse;
