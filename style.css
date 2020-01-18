@@ -981,12 +981,13 @@ body {
 }
 @media screen and (max-width: 750px) {
   .header {
-    height: auto;
-    padding: 10px 20px;
+    height: 40px;
+    padding: 10px 10px;
     justify-content: space-between;
   }
   .header .header-img {
     height: 100%;
+    width: 40%;
   }
   .header .header-img a img {
     height: 100%;
@@ -1008,6 +1009,7 @@ body {
   }
   .video {
     margin: 0;
+    padding: 0 10px;
   }
   .video .md {
     display: none;
@@ -1041,7 +1043,7 @@ body {
     position: absolute;
     display: flex;
     justify-content: center;
-    bottom: 50px;
+    bottom: 50%;
     z-index: 101;
   }
   .news {
@@ -1051,7 +1053,7 @@ body {
     align-items: center;
   }
   .news p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .news .date {
     width: 35%;
@@ -1077,7 +1079,7 @@ body {
     font-size: 1.5em;
   }
   .onepoint {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   .news-bottom-button {
     width: 80%;
@@ -1085,6 +1087,13 @@ body {
   }
   .news-bottom-button p {
     font-size: 1.2em;
+  }
+  .IR-news-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .IR-news-top .IR-news-topbutton {
+    margin: 0;
   }
   .IR-news-top .IR-news-topbutton p {
     font-size: 1.2em;
@@ -1096,8 +1105,9 @@ body {
     background-size: cover;
   }
   .movie h2 {
-    height: 30px;
+    height: auto;
     font-size: 1.2em;
+    margin-bottom: 40px;
   }
   .movie .ttl03 {
     display: none;
@@ -1110,7 +1120,7 @@ body {
   .movie p {
     width: 85%;
     margin: 0 auto 26px;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   br {
     display: none;
@@ -1128,7 +1138,7 @@ body {
     margin: 0;
   }
   .services {
-    font-size: 1.5em;
+    font-size: 1.2em;
     height: auto;
   }
   .services .services-top-text {
@@ -1140,12 +1150,21 @@ body {
   }
   .services .services-main li {
     margin: 10px 0;
-    height: 550px;
+  }
+  .services .services-main li:nth-child(1) {
+    height: 390px;
+  }
+  .services .services-main li .services-main-title {
+    width: 90%;
+    padding: 5%;
   }
   .services .services-main li .services-main-title .services-text {
-    font-size: 1.5em;
+    font-size: 1.1em;
     height: auto;
   }
+  .services .services-main li .services-main-title .services-img {
+    width: 100%;
+  } 
   .btn-primary {
     font-weight: bold;
     width: 80%;
@@ -1183,6 +1202,11 @@ body {
   .top-group .two-group li {
     margin: 10px 0;
     height: auto;
+    background-position: bottom 50% right 50%;
+  }
+  .top-group .two-group li .one-group {
+    margin: 0 50px;
+    
   }
   .top-group .two-group li .one-group:nth-child(2) {
     left: 0;
@@ -1196,7 +1220,7 @@ body {
     width: 100%;
   }
   .top-group .two-group li .one-group p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0 30px;
   }
   .footer-top {
@@ -1217,6 +1241,16 @@ body {
     border-bottom: solid 1px #ccc;
     padding: 0 20px;
     margin: 0;
+  }
+  .footer-middle {
+    padding: 10px;
+    margin: 0;
+  }
+  .footer-middle img:nth-child(2) {
+    margin: 0;
+  }
+  .footer-middle .language {
+    right: 10px;
   }
   .footer-bottom {
     height: auto;
