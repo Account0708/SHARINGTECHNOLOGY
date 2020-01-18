@@ -1874,4 +1874,22 @@ ul li:nth-child(2) .services-main-title {
   #ir-news .ir-newsmain-mainblock .ir-contents .contents-section .one-content {
     width: 100%;
   }
+  .post .guide-place {
+    flex-wrap: wrap;
+  }
+  .post .newsmain .post-main {
+    width: 95%;
+  }
+  #news .newsmain .post-main .last {
+    flex-direction: column;
+    height: auto;
+  }
+  .post .newsmain .post-main .last .video {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+  .post .newsmain .post-main .last .video iframe {
+    width: 100%;
+  }
  }
