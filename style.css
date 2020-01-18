@@ -1067,7 +1067,7 @@ body {
     width: auto;
   }
   .news .news-release img {
-    height: 2rem;
+    width: auto;
   }
 
   .news .IR-news {
