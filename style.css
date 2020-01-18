@@ -624,7 +624,6 @@ body {
   list-style: none;
 }
 .services-main li {
-  position: relative;
   background: white;
   height: 431px;
   border: 20px solid white;
@@ -636,9 +635,12 @@ body {
   width: 100%;
   height: 100%;
 }
-.services-main-title {
-  position: absolute;
-  top: 0;
+ul li:nth-child(1) .services-main-title {
+  background-image: url(./imgs/img02-1.jpg);
+  padding: 48px 30px 14px;
+}
+ul li:nth-child(2) .services-main-title {
+  background-image: url(./imgs/img01-1.jpg);
   padding: 48px 30px 14px;
 }
 .services-main-text {
@@ -1144,6 +1146,7 @@ body {
   }
   .services {
     font-size: 1.2em;
+    padding: 0 10px;
     height: auto;
   }
   .services .services-top-text {
@@ -1155,14 +1158,21 @@ body {
   }
   .services .services-main li {
     margin: 10px 0;
+    height: auto;
   }
-  .services .services-main li .services-main-title {
+  .services .services-main li:nth-child(1) .services-main-title {
     width: 90%;
+    height: auto;
+    padding: 5%;
+  }
+  .services .services-main li:nth-child(2) .services-main-title {
+    width: 90%;
+    height: auto;
     padding: 5%;
   }
   .services .services-main li .services-main-title .services-text {
     font-size: 1.1em;
-    height: 100%;
+    height: auto;
   }
   .services .services-main li .services-main-title .services-img {
     width: 100%;
