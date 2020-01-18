@@ -1156,16 +1156,13 @@ body {
   .services .services-main li {
     margin: 10px 0;
   }
-  .services .services-main li:nth-child(1) {
-    height: 390px;
-  }
   .services .services-main li .services-main-title {
     width: 90%;
     padding: 5%;
   }
   .services .services-main li .services-main-title .services-text {
     font-size: 1.1em;
-    height: auto;
+    height: 100%;
   }
   .services .services-main li .services-main-title .services-img {
     width: 100%;
