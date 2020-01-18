@@ -1788,4 +1788,83 @@ ul li:nth-child(2) .services-main-title {
     align-items: center;
     width: 90%;
   }
+  #ir-news .news-top-img {
+    margin: 0 3%;
+    background-size: cover;
+    background-position: bottom 50% right 20%;
+  }
+  #ir-news .ir-newsmain {
+    background: none;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-leftsidebar {
+    display: none;
+    background: none;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-informaion-block {
+    align-items: center;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-informaion-block h2 {
+    margin-bottom: 15px;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-informaion-block h2 img {
+    width: 100%
+  } 
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-informaion-block ul {
+    justify-content: space-between;
+    width: 85%;
+    height: auto;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-informaion-block ul li {
+    width: 30%;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-informaion-block ul li a {
+    height: 100%;
+    width: 100%;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-informaion-block ul li a img {
+    width: 100%;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-news-block {
+    align-items: center;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-news-block h2 {
+    margin-bottom: 15px;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-news-block .scroll {
+    width: 85%;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-news-block .scroll ul {
+    margin: 0;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-news-block .bottom-button-block {
+    width: 91%;
+    padding: 3% 0;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-news-block .bottom-button-block .bottom-button {
+    width: 48%;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-news-block .bottom-button-block .bottom-button p {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-news-block .bottom-button-block .bottom-button p:before {
+    width: 10px;
+    height: 10px;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-contents {
+    align-items: center;
+  }
+  #ir-news .ir-newsmain .ir-newsmain-mainblock .ir-contents h2 img {
+    width: 100%;
+  }
+  #ir-news .ir-newsmain-mainblock .ir-contents .contents-section .one-content {
+    width: 100%;
+  }
  }
